@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-flex">
+            
+            <label for="variabel">Masukkan nama variabel : </label>
+            <input list="var" name="variabel" id="variabel">
+            <datalist id="var">
+                <option value="a"></option>
+                <option value="b"></option>
+                <option value="c"></option>
+                <option value="d"></option>
+                <option value="e"></option>
+                <option value="f"></option>
+                <option value="g"></option>
+                <option value="h"></option>
+                <option value="i"></option>
+                <option value="j"></option>
+                <option value="k"></option>
+                <option value="l"></option>
+                <option value="m"></option>
+                <option value="n"></option>
+                <option value="o"></option>
+                <option value="p"></option>
+                <option value="q"></option>
+                <option value="r"></option>
+                <option value="s"></option>
+                <option value="t"></option>
+                <option value="u"></option>
+                <option value="v"></option>
+                <option value="w"></option>
+                <option value="x"></option>
+                <option value="y"></option>
+                <option value="z"></option>
+            </datalist>
+            
+            <label for="jumlah-angka-variabel" id="jumlah-angka-variabel">Masukkan angka variabel : </label>
+            <input type="number" name="angka-variabel" id="angka-variabel">
+            
+            <label for="kondisi-true">Masukkan Kondisi True : </label>
+            <select name="kondisi-true" id="kondisi-true">
+                <option selected hidden></option>
+                <option value="<"><</option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<="><=</option>
+                <option value=">=">>=</option>
+                <option value="!=">!=</option>
+            </select>
+            
+            <label for="jumlah-angka-true" id="jumlah-angka-true">Masukkan angka : </label>
+            <input type="number" name="angka-true" id="angka-true">
+
+            <label for="kondisi-false">Masukkan Kondisi False : </label>
+            <select name="kondisi-false" id="kondisi-false">
+                <option selected hidden></option>
+                <option value="++">++</option>
+                <option value="--">--</option>
+                <option value="+=">+=</option>
+                <option value="-=">-=</option>
+            </select>
+
+            <label for="jumlah-angka" id="jumlah-angka" class="hidden">Masukkan jumlah penambahan : </label>
+            <input type="number" name="angka" id="angka" class="hidden">
+
+            <p>Hasil =</p>
+            <pre>
+                <code>
+for (let <span class="output-variabel"></span> = <span id="output-angka-variabel"></span>; <span class="output-variabel"></span> <span id="output-kondisi-true"></span> <span id="output-angka-true"></span>; <span class="output-variabel"></span><span id="output-kondisi-false"></span><span id="jumlah-penambahan"></span>) {
+    //output
+}
+                </code>
+            </pre>
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
