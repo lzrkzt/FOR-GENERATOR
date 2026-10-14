@@ -1,3 +1,114 @@
 .hidden {
     display: none;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.container {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-flex {
+    background-color: rgb(233, 230, 230);
+    border: 1px solid white;
+    width: 50%;
+    height: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+    box-shadow:  0px 5px 7px -10px;
+}
+
+.container-flex:hover {
+    background-color: rgb(218, 217, 215);
+    filter: saturate(2);
+    box-shadow:  0px 5px 15px -10px;
+    transition: 0.5s;
+}
+
+
+/* ========== INPUT ========= */
+.input {
+    /* background-color: azure; */
+    width: 100%;
+    height: 50%;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.input label {
+    margin: 0;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    user-select: none;
+    text-transform: capitalize;
+}
+
+.input #nama-variabel {
+    margin-top: 7px;
+}
+
+.input input, .input select {
+    margin: 0;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    width: 70%;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+/* ============== OUTPUT ============== */
+.hasil {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hasil p {
+    /* align-self: center; */
+    margin-left: 40px;
+    font-size: 35px;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.hasil code {
+    background-color: rgb(243, 241, 241);
+    border-radius: 7px;
+    border: 1px solid rgb(215, 214, 214);
+    width: 60%;
+    height: 50%;
+    padding: 30px;
+    align-self: center;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 7px -5px black;
+}
+
+.hasil code:hover {
+    box-shadow: inset 0px 0px 10px -6px black;
+    transition: 0.3s;
+}

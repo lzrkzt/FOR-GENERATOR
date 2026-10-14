@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <div class="container-flex">
-            
-            <label for="variabel">Masukkan nama variabel : </label>
+            <div class="input">
+            <label for="variabel" id="nama-variabel">Masukkan Nama Variabel : </label>
             <input list="var" name="variabel" id="variabel">
             <datalist id="var">
                 <option value="a"></option>
@@ -41,7 +41,7 @@
                 <option value="z"></option>
             </datalist>
             
-            <label for="jumlah-angka-variabel" id="jumlah-angka-variabel">Masukkan angka variabel : </label>
+            <label for="angka-variabel" id="jumlah-angka-variabel">Masukkan angka variabel : </label>
             <input type="number" name="angka-variabel" id="angka-variabel">
             
             <label for="kondisi-true">Masukkan Kondisi True : </label>
@@ -55,7 +55,7 @@
                 <option value="!=">!=</option>
             </select>
             
-            <label for="jumlah-angka-true" id="jumlah-angka-true">Masukkan angka : </label>
+            <label for="angka-true" id="jumlah-angka-true">Masukkan angka : </label>
             <input type="number" name="angka-true" id="angka-true">
 
             <label for="kondisi-false">Masukkan Kondisi False : </label>
@@ -67,17 +67,18 @@
                 <option value="-=">-=</option>
             </select>
 
-            <label for="jumlah-angka" id="jumlah-angka" class="hidden">Masukkan jumlah penambahan : </label>
+            <label for="angka" id="jumlah-angka" class="hidden">Masukkan jumlah penambahan : </label>
             <input type="number" name="angka" id="angka" class="hidden">
-
-            <p>Hasil =</p>
-            <pre>
+            </div>
+            
+            <div class="hasil">
+            <p>Output :</p>
                 <code>
-for (let <span class="output-variabel"></span> = <span id="output-angka-variabel"></span>; <span class="output-variabel"></span> <span id="output-kondisi-true"></span> <span id="output-angka-true"></span>; <span class="output-variabel"></span><span id="output-kondisi-false"></span><span id="jumlah-penambahan"></span>) {
+                    <pre>for (let <span class="output-variabel"></span> = <span id="output-angka-variabel"></span>; <span class="output-variabel"></span> <span id="output-kondisi-true"></span> <span id="output-angka-true"></span>; <span class="output-variabel"></span><span id="output-kondisi-false"></span><span id="jumlah-penambahan"></span>) {
     //output
-}
+}</pre>
                 </code>
-            </pre>
+            </div>
 
 
         </div>
